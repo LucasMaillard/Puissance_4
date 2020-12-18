@@ -5,10 +5,6 @@ body {
     overflow-y: hidden;
 }
 
-a, a:visited{
-    color: #551A8B;
-}
-
 h1 {
     line-height: 1;
     margin: 0;
