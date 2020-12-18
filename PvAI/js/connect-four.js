@@ -203,35 +203,37 @@ Game.prototype.updateStatus = function() {
     if (that.board.score() == -that.score) {
         that.status = 1;
         that.markWin();
-        alert("You have won!");
+        alert("Tu as gagné!");
     }
 
     // Computer won
     if (that.board.score() == that.score) {
         that.status = 2;
         that.markWin();
-        alert("You have lost!");
+        alert("Tu as perdu!");
     }
 
     // Tie
     if (that.board.isFull()) {
         that.status = 3;
-        alert("Tie!");
+        alert("égalité!");
     }
+
+   
 
     var html = document.getElementById('status');
     if (that.status == 0) {
         html.className = "status-running";
-        html.innerHTML = "running";
+        html.innerHTML = "En partie";
     } else if (that.status == 1) {
         html.className = "status-won";
-        html.innerHTML = "won";
+        html.innerHTML = "gagné";
     } else if (that.status == 2) {
         html.className = "status-lost";
-        html.innerHTML = "lost";
+        html.innerHTML = "perdu";
     } else {
         html.className = "status-tie";
-        html.innerHTML = "tie";
+        html.innerHTML = "égalité";
     }
 }
 

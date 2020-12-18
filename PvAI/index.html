@@ -9,16 +9,12 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        
         <div id="navigation">
             <span class="title">Puissance 4 JS -</span> <a href="../index.html">Aller au menu</a>
         </div>
-        
         <div id="container">
-            <h1 class="header-text">Minimax Algorithm</h1>
-            <p class="text subheader-text">
-                Artificial Intelligence based on the Minimax- and α-β-Pruning principles.
-            </p>
-
+            <h1 class="header-text">Joueur contre IA</h1>
             <div class="box-left">
                 <table id="game_board" cellpadding="0"></table> 
                 <div id="loading">AI is thinking...</div>
@@ -26,13 +22,6 @@
 
             <div class="box-right">
                 <div id="options">
-                    <p class="header">Algorithm</p>
-                    <p>
-                        <select id="algorithm-select" onchange="selectAlgorithm(this)" autocomplete="off">
-                            <option value="minimax" selected>Minimax</option>
-                            <option value="alphabeta">Alpha-Beta</option>
-                        </select>
-                    </p>
                     <p class="header">Difficulty</p>
                     <p>
                         <select id="difficulty" autocomplete="off">
@@ -56,7 +45,7 @@
                     <p><span id="ai-column">Column: ?</span></p>
                     <p><span id="ai-score">Score: ?</span></p>
                     <br/>
-                    <p>Status: <span id="status" class="status-running">running</span></p>
+                    <p>Status: <span id="status" class="status-running">en partie</span></p>
                 </div>
             </div>
         </div>
